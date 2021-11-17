@@ -90,7 +90,6 @@ public class MenuInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(117, 28, 159));
-        setMaximumSize(new java.awt.Dimension(350, 350));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 700));
 
@@ -100,6 +99,7 @@ public class MenuInicial extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab3_datos2/Assets/icons8-play-50.png"))); // NOI18N
         jButton1.setText("Jugar");
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

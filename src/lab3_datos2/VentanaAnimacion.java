@@ -206,24 +206,24 @@ public class VentanaAnimacion extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(117, 28, 159));
 
-        jugActivoLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jugActivoLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jugActivoLabel.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Jugador más rapido:");
 
-        jugMasRapidoLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jugMasRapidoLabel.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         jugMasRapidoLabel.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Tiempo Jugador 1");
 
-        tiempo1Label.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        tiempo1Label.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         tiempo1Label.setForeground(new java.awt.Color(255, 255, 255));
 
-        tiempo2Label.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        tiempo2Label.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
         tiempo2Label.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -237,6 +237,7 @@ public class VentanaAnimacion extends javax.swing.JFrame {
         salirbtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         salirbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab3_datos2/Assets/icons8-exit-40.png"))); // NOI18N
         salirbtn.setText("Salir");
+        salirbtn.setFocusable(false);
         salirbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salirbtnActionPerformed(evt);
@@ -258,23 +259,24 @@ public class VentanaAnimacion extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel4)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(41, 41, 41))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jugMasRapidoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(112, 112, 112)))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(jLabel2)
+                            .addGap(41, 41, 41))
                         .addComponent(jLabel6))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(tiempo1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(132, 132, 132))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(tiempo2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(126, 126, 126))))
+                        .addGap(132, 132, 132))))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addComponent(jugActivoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addComponent(jugMasRapidoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(125, 125, 125)
+                        .addComponent(tiempo2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addComponent(jugActivoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -288,17 +290,17 @@ public class VentanaAnimacion extends javax.swing.JFrame {
                 .addComponent(jugActivoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81)
                 .addComponent(jLabel2)
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addComponent(jugMasRapidoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(34, 34, 34)
                 .addComponent(tiempo1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(61, 61, 61)
                 .addComponent(jLabel6)
-                .addGap(38, 38, 38)
+                .addGap(29, 29, 29)
                 .addComponent(tiempo2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60))
+                .addGap(69, 69, 69))
         );
 
         getContentPane().add(jPanel1);
